@@ -12,6 +12,7 @@ BuildRequires:	portaudio-devel
 #BuildRequires:	freeglut-devel
 BuildRequires:	libmesaglut-devel
 BuildRequires:	plib-devel
+BuildRequires:	jpeg-devel
 BuildRequires:	libxi-devel
 BuildRequires:	libxt-devel
 BuildRequires:	libxmu-devel
