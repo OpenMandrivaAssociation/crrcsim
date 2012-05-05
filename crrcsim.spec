@@ -1,6 +1,6 @@
 Summary:	A Model-Airplane Flight Simulation Program
 Name:		crrcsim
-Version:	0.9.11
+Version:	0.9.12
 Release:	1
 License:	GPLv2
 Group:		Games/Other 
@@ -37,13 +37,14 @@ any input device such as joystick, mouse, keyboard ...
 
 %install
 %makeinstall_std
-#make DESTDIR=% {buildroot} install
+
+%find_lang %{name}
 
 desktop-file-install --vendor=""                        \
         --dir=%{buildroot}%{_datadir}/applications      \
         %{SOURCE1}
 
-%files
+%files -f %{name}.lang
 %doc COPYING
 %{_datadir}/%{name}/
 %{_bindir}/crrcsim
