@@ -7,15 +7,14 @@ Group:		Games/Other
 URL:		http://crrcsim.berlios.de/wiki
 Source0:	http://download.berlios.de/crrcsim/%{name}-%{version}.tar.gz
 Source1:	CRRCsim.desktop
-BuildRequires:	SDL-devel
-BuildRequires:	portaudio-devel
-#BuildRequires:	freeglut-devel
-BuildRequires:	libmesaglut-devel
-BuildRequires:	plib-devel
 BuildRequires:	jpeg-devel
-BuildRequires:	libxi-devel
-BuildRequires:	libxt-devel
-BuildRequires:	libxmu-devel
+BuildRequires:	plib-devel
+BuildRequires:	pkgconfig(glut)
+BuildRequires:	pkgconfig(portaudio-2.0)
+BuildRequires:	pkgconfig(sdl)
+BuildRequires:	pkgconfig(xi)
+BuildRequires:	pkgconfig(xmu)
+BuildRequires:	pkgconfig(xt)
 BuildRequires:	desktop-file-utils
 
 %description
@@ -50,3 +49,15 @@ desktop-file-install --vendor=""                        \
 %{_bindir}/crrcsim
 %{_datadir}/applications/CRRCsim.desktop
 %{_mandir}/man1/%{name}.1.xz
+
+
+%changelog
+* Sat May 05 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.9.12-1
++ Revision: 796603
+- version update 0.9.12
+
+* Sun Nov 13 2011 Alexander Khrukin <akhrukin@mandriva.org> 0.9.11-1
++ Revision: 730305
+- BS jpeg fix
+- imported package crrcsim
+
