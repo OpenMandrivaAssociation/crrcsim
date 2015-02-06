@@ -1,7 +1,7 @@
 Summary:	A Model-Airplane Flight Simulation Program
 Name:		crrcsim
 Version:	0.9.12
-Release:	1
+Release:	2
 License:	GPLv2
 Group:		Games/Other 
 URL:		http://crrcsim.berlios.de/wiki
