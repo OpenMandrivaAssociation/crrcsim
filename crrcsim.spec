@@ -4,7 +4,7 @@ Version:	0.9.12
 Release:	2
 License:	GPLv2
 Group:		Games/Other 
-URL:		http://crrcsim.berlios.de/wiki
+URL:		https://crrcsim.berlios.de/wiki
 Source0:	http://download.berlios.de/crrcsim/%{name}-%{version}.tar.gz
 Source1:	CRRCsim.desktop
 BuildRequires:	jpeg-devel
