@@ -7,6 +7,11 @@ Group:		Games/Other
 URL:		https://crrcsim.berlios.de/wiki
 Source0:	http://download.berlios.de/crrcsim/%{name}-%{version}.tar.gz
 Source1:	CRRCsim.desktop
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	jpeg-devel
 BuildRequires:	plib-devel
 BuildRequires:	pkgconfig(glut)
